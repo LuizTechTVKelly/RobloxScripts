@@ -223,7 +223,7 @@ local library = {
 	function library:CreateWindow(name, size, hidebutton)
 		local window = { }
 		window.name = name or ""
-		window.size = UDim2.fromOffset(492, 598)
+		window.size = size or UDim2.fromOffset(492, 598)
 		window.hidebutton = hidebutton or Enum.KeyCode.RightControl
 		window.theme = library.theme
 		local updateevent = Instance.new("BindableEvent")
